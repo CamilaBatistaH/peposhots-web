@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peposhots — Bartender & Eventos en Miami</title>
+    <meta
+      name="description"
+      content="Peposhots: servicio premium de bartender para bodas, eventos corporativos y residencias en Miami (SW, Doral, Kendall y alrededores)."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <!-- HEADER -->
+    <header class="header" data-header>
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Peposhots">
+          <span class="brand__mark">Peposhots</span>
+          <span class="brand__sub">BARTENDER · EVENTOS</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal" data-nav>
+          <a href="#servicios">Servicios</a>
+          <a href="#cocteles">Cócteles</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#about">Sobre</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--ghost btn--sm" href="#contacto">Cotizar</a>
+
+          <button class="icon-btn" type="button" aria-label="Abrir menú" data-menu-btn>
+            <span aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile" data-mobile>
+        <div class="mobile__panel">
+          <div class="mobile__top">
+            <span class="mobile__title">Menú</span>
+            <button class="icon-btn" type="button" aria-label="Cerrar menú" data-menu-close>
+              <span aria-hidden="true">✕</span>
+            </button>
+          </div>
+
+          <div class="mobile__links">
+            <a href="#servicios">Servicios</a>
+            <a href="#cocteles">Cócteles</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#about">Sobre</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+
+          <div class="mobile__cta">
+            <a class="btn btn--primary" href="https://wa.me/17866067684" target="_blank" rel="noopener">
+              WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="tel:+17866067684">Llamar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="top" class="hero">
+        <div
+          class="hero__bg"
+          style="background-image: url('img/hero-main-16x9.png');"
+          role="img"
+          aria-label="Ambiente dark tropical bar"
+        ></div>
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__content">
+          <div class="hero__copy">
+            <p class="eyebrow">MIAMI · SERVICIO PREMIUM</p>
+            <h1>Bartenders & meseros con ejecución impecable.</h1>
+            <p class="lead">
+              Bartender profesional para bodas, corporativos y eventos privados. Montaje impecable,
+              estética premium y atención al detalle.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="https://wa.me/17866067684" target="_blank" rel="noopener">
+                Cotiza por WhatsApp
+              </a>
+              <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+            </div>
+
+            <div class="chips" aria-label="Atributos">
+              <span class="chip">Montaje móvil</span>
+              <span class="chip">Mixología clásica</span>
+              <span class="chip">Experiencia real</span>
+            </div>
+
+            <div class="hero__micro">
+              <div class="micro">
+                <span class="micro__k">Zonas</span>
+                <span class="micro__v">SW · Doral · Kendall · alrededor</span>
+              </div>
+              <div class="micro">
+                <span class="micro__k">Contacto</span>
+                <span class="micro__v">+1 (786) 606-7684</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="section">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <h2>Servicios</h2>
+              <p class="muted">
+                Diseñado para que todo se vea limpio, caro y bien organizado (sin “caos de barra”).
+              </p>
+            </div>
+          </div>
+
+          <div class="grid cards cards--3">
+            <article class="card service">
+              <img src="img/services-bartender-4x5.png" alt="Servicio de bartender" loading="lazy" />
+              <div class="card__body">
+                <h3>Bartender</h3>
+                <p class="muted small">
+                  Preparación elegante, ritmo profesional y estética premium en cada trago.
+                </p>
+                <div class="tags">
+                  <span class="tag">Eventos</span>
+                  <span class="tag">Premium</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card service">
+              <img src="img/services-setup-mobilebar-4x5.png" alt="Montaje de barra móvil" loading="lazy" />
+              <div class="card__body">
+                <h3>Barra móvil & setup</h3>
+                <p class="muted small">
+                  Ice bucket, garnish station, herramientas y organización de nivel.
+                </p>
+                <div class="tags">
+                  <span class="tag">Montaje</span>
+                  <span class="tag">Orden</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card service">
+              <img src="img/services-waiter-4x5.png" alt="Servicio de meseros" loading="lazy" />
+              <div class="card__body">
+                <h3>Waiters / apoyo</h3>
+                <p class="muted small">
+                  Apoyo de servicio para que el evento se mantenga fluido y sin interrupciones.
+                </p>
+                <div class="tags">
+                  <span class="tag">Atención</span>
+                  <span class="tag">Pro</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COCTELES (aquí corregimos el swap: margarita y daiquiri ya quedan bien) -->
+      <section id="cocteles" class="section section--soft">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <h2>Cócteles destacados</h2>
+              <p class="muted">Clásicos bien hechos, presentación editorial y cero exceso visual.</p>
+            </div>
+          </div>
+
+          <div class="grid cards">
+            <article class="card product">
+              <img src="img/cocktail-margarita-4x5.png" alt="Margarita" loading="lazy" />
+              <div class="product__body">
+                <div class="product__top">
+                  <h3>Margarita</h3>
+                  <span class="price">Clásico</span>
+                </div>
+                <p class="muted small">Cítrica · limpia · balanceada</p>
+                <div class="tags">
+                  <span class="tag">Top</span>
+                  <span class="tag">Eventos</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product">
+              <img src="img/cocktail-daiquiri-4x5.png" alt="Daiquiri" loading="lazy" />
+              <div class="product__body">
+                <div class="product__top">
+                  <h3>Daiquiri</h3>
+                  <span class="price">Clásico</span>
+                </div>
+                <p class="muted small">Suave · cítrico · elegante</p>
+                <div class="tags">
+                  <span class="tag">Clásico</span>
+                  <span class="tag">Premium</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product">
+              <img src="img/cocktail-mojito-4x5.png" alt="Mojito" loading="lazy" />
+              <div class="product__body">
+                <div class="product__top">
+                  <h3>Mojito</h3>
+                  <span class="price">Refrescante</span>
+                </div>
+                <p class="muted small">Menta · lima · hielo limpio</p>
+                <div class="tags">
+                  <span class="tag">Fresh</span>
+                  <span class="tag">Verano</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product">
+              <img src="img/cocktail-pina-colada-4x5.png" alt="Piña Colada" loading="lazy" />
+              <div class="product__body">
+                <div class="product__top">
+                  <h3>Piña Colada</h3>
+                  <span class="price">Tropical</span>
+                </div>
+                <p class="muted small">Coco · piña · textura cremosa</p>
+                <div class="tags">
+                  <span class="tag">Tropical</span>
+                  <span class="tag">Eventos</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- NUEVOS: para tapar el hueco -->
+            <article class="card product">
+              <img src="img/cocktail-pisco-sour-4x5.png" alt="Pisco Sour" loading="lazy" />
+              <div class="product__body">
+                <div class="product__top">
+                  <h3>Pisco Sour</h3>
+                  <span class="price">Firma</span>
+                </div>
+                <p class="muted small">Espuma sedosa · bitters · elegante</p>
+                <div class="tags">
+                  <span class="tag">Signature</span>
+                  <span class="tag">Premium</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product">
+              <img src="img/cocktail-sangria-4x5.png" alt="Sangría" loading="lazy" />
+              <div class="product__body">
+                <div class="product__top">
+                  <h3>Sangría</h3>
+                  <span class="price">Clásico</span>
+                </div>
+                <p class="muted small">Fruta · hielo claro · ruby</p>
+                <div class="tags">
+                  <span class="tag">Social</span>
+                  <span class="tag">Eventos</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTOS -->
+      <section id="eventos" class="section banner-section">
+        <div class="wide-banner" style="background-image: url('img/event-wedding-3x2.png');" role="img" aria-label="Bodas"></div>
+        <div class="wide-overlay"></div>
+
+        <div class="container banner-section__content">
+          <div class="banner-card">
+            <p class="eyebrow">EVENTOS</p>
+            <h2>Bodas, corporativos y privados</h2>
+            <p class="muted">
+              3 estilos de evento, misma firma: estética impecable y coctelería bien ejecutada.
+            </p>
+
+            <div class="banner-card__row">
+              <div class="banner-stat">
+                <span class="banner-stat__k">Bodas</span>
+                <span class="banner-stat__v">Ambiente romántico</span>
+              </div>
+              <div class="banner-stat">
+                <span class="banner-stat__k">Corporate</span>
+                <span class="banner-stat__v">Upscale minimal</span>
+              </div>
+              <div class="banner-stat">
+                <span class="banner-stat__k">Residencias</span>
+                <span class="banner-stat__v">Cozy & premium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid cards cards--3 events-grid">
+            <article class="card event">
+              <img src="img/event-wedding-3x2.png" alt="Eventos de boda" loading="lazy" />
+              <div class="card__body">
+                <h3>Bodas</h3>
+                <p class="muted small">Bar elegante, iluminación cálida, presentación impecable.</p>
+              </div>
+            </article>
+            <article class="card event">
+              <img src="img/event-corporate-3x2.png" alt="Eventos corporativos" loading="lazy" />
+              <div class="card__body">
+                <h3>Corporativos</h3>
+                <p class="muted small">Setup limpio, rápido, profesional y sin ruido visual.</p>
+              </div>
+            </article>
+            <article class="card event">
+              <img src="img/event-home-residence-3x2.png" alt="Eventos en casa" loading="lazy" />
+              <div class="card__body">
+                <h3>En casa / residencias</h3>
+                <p class="muted small">Privado, íntimo, premium — sin perder presencia.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <h2>Sobre Peposhots</h2>
+              <p class="muted">Experiencia real, presentación cuidada y ejecución consistente.</p>
+            </div>
+          </div>
+
+          <div class="grid two-col">
+            <div class="card panel-card">
+              <p class="eyebrow">CREDIBILIDAD</p>
+              <h3>14+ años de experiencia</h3>
+              <p class="muted">
+                La prioridad no es “hacer muchos tragos”, sino que el evento se sienta
+                de nivel: orden, estética, servicio y sabor.
+              </p>
+
+              <div class="zones">
+                <div class="zone">
+                  <span class="muted">Zonas</span>
+                  <strong>SW Miami</strong>
+                  <span class="pill">Disponible</span>
+                </div>
+                <div class="zone">
+                  <span class="muted">Zonas</span>
+                  <strong>Doral</strong>
+                  <span class="pill">Disponible</span>
+                </div>
+                <div class="zone">
+                  <span class="muted">Zonas</span>
+                  <strong>Kendall</strong>
+                  <span class="pill">Disponible</span>
+                </div>
+                <div class="zone">
+                  <span class="muted">Cerca</span>
+                  <strong>Westchester · Tamiami · Fontainebleau</strong>
+                  <span class="pill pill--dim">Según agenda</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card panel-card about-media">
+              <div class="about-media__bg" style="background-image:url('img/cta-contact-16x9.png');" role="img" aria-label="Herramientas de bar"></div>
+              <div class="about-media__overlay"></div>
+              <div class="about-media__content">
+                <p class="eyebrow">ESTÉTICA</p>
+                <h3>Ambiente dark tropical / warm tungsten</h3>
+                <p class="muted small">
+                  Todo el sitio mantiene el mismo mood: sombras profundas, tungsteno cálido y detalles limpios.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ / TESTIMONIOS -->
+      <section id="faq" class="section faq-section">
+        <div class="faq-bg" style="background-image:url('img/bg-testimonials-faq-16x9.png');" role="img" aria-label="Fondo oscuro limpio"></div>
+        <div class="faq-overlay"></div>
+
+        <div class="container faq-content">
+          <div class="section__head">
+            <div>
+              <h2>FAQ</h2>
+              <p class="muted">Respuestas rápidas para cotizar sin vueltas.</p>
+            </div>
+          </div>
+
+          <div class="grid two-col">
+            <div class="card panel-card">
+              <h3>Lo que más preguntan</h3>
+              <div class="faq">
+                <details class="faq__item">
+                  <summary>¿Con cuánta anticipación se reserva?</summary>
+                  <div class="faq__content">
+                    Idealmente 1–2 semanas. Para fechas altas (bodas/corporativos) mejor reservar antes.
+                  </div>
+                </details>
+
+                <details class="faq__item">
+                  <summary>¿Qué incluye el servicio?</summary>
+                  <div class="faq__content">
+                    Montaje, organización, herramientas, ejecución de cócteles y atención en barra. El detalle exacto se ajusta a tu evento.
+                  </div>
+                </details>
+
+                <details class="faq__item">
+                  <summary>¿Trabajan en toda Miami?</summary>
+                  <div class="faq__content">
+                    Principalmente SW Miami, Doral y Kendall. Alrededores cercanos según distancia y agenda.
+                  </div>
+                </details>
+
+                <details class="faq__item">
+                  <summary>¿Cómo se cotiza?</summary>
+                  <div class="faq__content">
+                    Por WhatsApp: fecha, zona, cantidad de personas y tipo de evento. Con eso sale una cotización clara.
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="card panel-card">
+              <h3>Contacto directo</h3>
+              <p class="muted">
+                Si me escribes por WhatsApp con estos 4 datos, te respondo rápido:
+              </p>
+              <ul class="list">
+                <li>Fecha y horario</li>
+                <li>Zona (SW / Doral / Kendall)</li>
+                <li>Tipo de evento</li>
+                <li>Cantidad aproximada de personas</li>
+              </ul>
+
+              <div class="cta-row">
+                <a class="btn btn--primary" href="https://wa.me/17866067684" target="_blank" rel="noopener">
+                  WhatsApp
+                </a>
+                <a class="btn btn--ghost" href="tel:+17866067684">Llamar</a>
+              </div>
+
+              <p class="fineprint">
+                Número: <strong>+1 (786) 606-7684</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO / CTA FINAL -->
+      <section id="contacto" class="section cta-final">
+        <div class="cta-final__bg" style="background-image:url('img/cta-contact-16x9.png');" role="img" aria-label="CTA final"></div>
+        <div class="cta-final__overlay"></div>
+
+        <div class="container cta-final__content">
+          <div class="card panel-card cta-final__card">
+            <p class="eyebrow">COTIZACIÓN</p>
+            <h2>¿Listos para que el evento se vea y se sienta premium?</h2>
+            <p class="muted">
+              Escríbeme por WhatsApp. Te respondo con una cotización clara según tu fecha, zona y personas.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn--primary" href="https://wa.me/17866067684" target="_blank" rel="noopener">
+                Cotizar por WhatsApp
+              </a>
+              <a class="btn btn--ghost" href="tel:+17866067684">Llamar</a>
+            </div>
+
+            <div class="footer-mini">
+              <span class="muted small">© <span id="year"></span> Peposhots</span>
+              <span class="muted small">SW · Doral · Kendall · Miami</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER MARK (opcional) -->
+      <section class="brandmark-strip" aria-label="Marca">
+        <img src="img/brandmark-peposhots-dark-16x9.png" alt="Peposhots marca" loading="lazy" />
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
