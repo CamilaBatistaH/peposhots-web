@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peposhots — Bartender & Eventos · Miami</title>
+    <title>Peposhots — Bartender & Eventos (Miami)</title>
     <meta
       name="description"
-      content="Servicios premium de bartender y eventos en Miami. Cócteles signature, montaje limpio, ejecución elegante."
+      content="Bartender & servicio premium para eventos en Miami. Cócteles signature, barra móvil, bodas, corporativos, cumpleaños."
     />
 
-    <!-- Premium fonts -->
+    <!-- Fonts (premium) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -27,47 +27,37 @@
     <header class="header">
       <div class="container header__inner">
         <a class="brand" href="#top" aria-label="Peposhots">
-          <span class="brand__title">Peposhots</span>
+          <span class="brand__name">Peposhots</span>
           <span class="brand__sub">BARTENDER · EVENTOS · MIAMI</span>
         </a>
 
-        <!-- Mobile toggle (no JS) -->
-        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menú" />
-        <label class="burger btn btn--ghost btn--sm" for="nav-toggle" aria-hidden="true">
-          ☰
-        </label>
-
-        <nav class="nav nav--desktop" aria-label="Primary">
+        <!-- Desktop nav -->
+        <nav class="nav" aria-label="Navegación principal">
           <a href="#services">Servicios</a>
-          <a href="#cocktails">Cócteles</a>
           <a href="#events">Eventos</a>
+          <a href="#cocktails">Cócteles</a>
           <a href="#about">Sobre</a>
           <a href="#faq">Preguntas</a>
           <a href="#contact">Contacto</a>
         </nav>
 
         <div class="header__actions">
-          <a class="btn btn--ghost btn--sm" href="#contact">Cotizar</a>
-          <!-- Reemplaza el # por tu link real de WhatsApp -->
+          <!-- Pon tu link real de WhatsApp aquí -->
           <a class="btn btn--primary btn--sm" href="#contact">WhatsApp</a>
-        </div>
 
-        <!-- Mobile menu panel -->
-        <nav class="nav nav--mobile" aria-label="Mobile">
-          <div class="nav__panel">
-            <a href="#services" onclick="document.getElementById('nav-toggle').checked=false">Servicios</a>
-            <a href="#cocktails" onclick="document.getElementById('nav-toggle').checked=false">Cócteles</a>
-            <a href="#events" onclick="document.getElementById('nav-toggle').checked=false">Eventos</a>
-            <a href="#about" onclick="document.getElementById('nav-toggle').checked=false">Sobre</a>
-            <a href="#faq" onclick="document.getElementById('nav-toggle').checked=false">Preguntas</a>
-            <a href="#contact" onclick="document.getElementById('nav-toggle').checked=false">Contacto</a>
-
-            <div class="nav__panelActions">
-              <a class="btn btn--primary btn--sm" href="#contact" onclick="document.getElementById('nav-toggle').checked=false">Reservar</a>
-              <a class="btn btn--ghost btn--sm" href="#top" onclick="document.getElementById('nav-toggle').checked=false">Inicio</a>
+          <!-- Mobile menu (no JS) -->
+          <details class="navmobile">
+            <summary aria-label="Abrir menú">☰</summary>
+            <div class="navmobile__panel">
+              <a href="#services">Servicios</a>
+              <a href="#events">Eventos</a>
+              <a href="#cocktails">Cócteles</a>
+              <a href="#about">Sobre</a>
+              <a href="#faq">Preguntas</a>
+              <a href="#contact">Contacto</a>
             </div>
-          </div>
-        </nav>
+          </details>
+        </div>
       </div>
     </header>
 
@@ -78,40 +68,40 @@
           class="hero__bg"
           style="background-image: url('img/hero-main-16x9.png');"
           role="img"
-          aria-label="Peposhots hero background"
+          aria-label="Fondo premium para Peposhots"
         ></div>
         <div class="hero__overlay"></div>
 
         <div class="container hero__content">
           <div class="hero__grid">
             <div class="hero__copy">
-              <p class="eyebrow">EVENTOS PRIVADOS PREMIUM</p>
+              <p class="eyebrow">EVENTOS PRIVADOS · NIVEL PREMIUM</p>
 
               <h1>
-                Atmósfera bar elegante.
-                <span class="accent">Cócteles signature</span> donde tú estés.
+                Bar elegante donde sea.
+                <span class="accent">Cócteles signature</span> con ejecución limpia.
               </h1>
 
               <p class="lead">
-                Servicio de bartender para bodas, corporativos, cumpleaños y reuniones privadas —
-                vibe Miami, ejecución limpia y sofisticada.
+                Servicio de bartender y eventos para bodas, corporativos, cumpleaños y reuniones privadas
+                — estética premium, ritmo rápido, cero caos.
               </p>
 
               <div class="hero__cta">
-                <a class="btn btn--primary" href="#contact">Consultar disponibilidad</a>
+                <a class="btn btn--primary" href="#contact">Reservar por WhatsApp</a>
                 <a class="btn btn--ghost" href="#services">Ver servicios</a>
               </div>
 
               <div class="chips" aria-label="Atributos clave">
-                <span class="chip">Bar móvil</span>
+                <span class="chip">Barra móvil</span>
                 <span class="chip">Garnish premium</span>
-                <span class="chip">Montaje limpio</span>
+                <span class="chip">Servicio limpio</span>
               </div>
 
               <div class="hero__micro">
                 <div class="micro">
                   <span class="micro__k">Zona</span>
-                  <span class="micro__v">Miami y alrededores</span>
+                  <span class="micro__v">Miami + alrededores</span>
                 </div>
                 <div class="micro">
                   <span class="micro__k">Respuesta</span>
@@ -120,35 +110,50 @@
               </div>
             </div>
 
+            <!-- Right feature -->
             <aside class="hero__feature card">
               <div class="hero__featureTop">
-                <p class="eyebrow eyebrow--accent">RECOMENDADO</p>
-                <h2 class="h2-tight">Selección Signature</h2>
+                <p class="eyebrow eyebrow--accent">SELECCIÓN POPULAR</p>
+                <h2 class="h2-tight">Set de Cócteles</h2>
                 <p class="muted">
-                  Una curaduría con presentación premium: se ve increíble y sabe mejor.
+                  Un set curado que se ve caro, se siente frío y sale consistente.
                 </p>
               </div>
 
               <div class="hero__cocktailRow">
                 <div class="mini">
-                  <img src="img/ingredient-mojito-mint-lime-1x1.png" alt="Ingredientes Mojito" loading="lazy" />
+                  <img
+                    src="img/ingredient-mojito-mint-lime-1x1.png"
+                    alt="Ingredientes de mojito"
+                    loading="lazy"
+                  />
                   <div class="mini__meta">
                     <strong>Mojito</strong>
-                    <span class="muted small">Menta · lima · burbujeante</span>
+                    <span class="muted small">Menta · lima · hielo</span>
                   </div>
                 </div>
+
                 <div class="mini">
-                  <img src="img/ingredient-margarita-salt-lime-1x1.png" alt="Ingredientes Margarita" loading="lazy" />
+                  <img
+                    src="img/ingredient-margarita-salt-lime-1x1.png"
+                    alt="Ingredientes de margarita"
+                    loading="lazy"
+                  />
                   <div class="mini__meta">
                     <strong>Margarita</strong>
-                    <span class="muted small">Sal · cítrico</span>
+                    <span class="muted small">Sal · cítrico · frío</span>
                   </div>
                 </div>
+
                 <div class="mini">
-                  <img src="img/ingredient-pina-colada-pineapple-coconut-1x1.png" alt="Ingredientes Piña Colada" loading="lazy" />
+                  <img
+                    src="img/ingredient-pina-colada-pineapple-coconut-1x1.png"
+                    alt="Ingredientes de piña colada"
+                    loading="lazy"
+                  />
                   <div class="mini__meta">
                     <strong>Piña Colada</strong>
-                    <span class="muted small">Cremosa · tropical</span>
+                    <span class="muted small">Piña · coco · crema</span>
                   </div>
                 </div>
               </div>
@@ -156,7 +161,7 @@
               <div class="hero__featureBottom">
                 <div class="stat">
                   <span class="stat__k">Ideal para</span>
-                  <span class="stat__v">Bodas · Cumpleaños · Casa</span>
+                  <span class="stat__v">Bodas · Casas · Cumpleaños</span>
                 </div>
                 <a class="btn btn--ghost btn--sm" href="#cocktails">Ver cócteles</a>
               </div>
@@ -171,186 +176,56 @@
           <div class="section__head">
             <div>
               <h2>Servicios</h2>
-              <p class="muted">Ejecución premium, flujo calmado, montaje limpio. Sin caos.</p>
+              <p class="muted">Ejecución premium, workflow calmado, montaje limpio.</p>
             </div>
             <a class="btn btn--ghost btn--sm" href="#contact">Armar paquete</a>
           </div>
 
           <div class="grid cards cards--3">
             <article class="card service">
-              <div class="card__media card__media--tall">
-                <img src="img/services-bartender-4x5.png" alt="Servicio de bartender" loading="lazy" />
+              <div class="card__media">
+                <img src="img/services-bartender-4x5.png" alt="Servicio bartender" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3>Bartender</h3>
-                <p class="muted small">Cócteles signature, velocidad + consistencia, estación impecable.</p>
+                <p class="muted small">Cócteles signature, consistencia, estación disciplinada.</p>
                 <ul class="bullets">
                   <li>Plan de menú</li>
                   <li>Prep + garnish</li>
-                  <li>Servicio fluido</li>
+                  <li>Servicio rápido</li>
                 </ul>
               </div>
             </article>
 
             <article class="card service">
-              <div class="card__media card__media--tall">
+              <div class="card__media">
                 <img src="img/services-waiter-4x5.png" alt="Servicio de mesero" loading="lazy" />
               </div>
               <div class="card__body">
                 <h3>Mesero</h3>
-                <p class="muted small">Servicio pulido, atención a mesa, experiencia elegante.</p>
+                <p class="muted small">Atención al detalle, ritmo, experiencia elegante.</p>
                 <ul class="bullets">
-                  <li>Servir + retirar</li>
+                  <li>Servicio + retirada</li>
                   <li>Manejo de cristalería</li>
-                  <li>Ritmo de hospitalidad</li>
+                  <li>Hospitalidad</li>
                 </ul>
               </div>
             </article>
 
             <article class="card service">
-              <div class="card__media card__media--tall">
-                <img src="img/services-setup-mobilebar-4x5.png" alt="Montaje de bar móvil" loading="lazy" />
+              <div class="card__media">
+                <img src="img/services-setup-mobilebar-4x5.png" alt="Montaje barra móvil" loading="lazy" />
               </div>
               <div class="card__body">
-                <h3>Montaje Bar Móvil</h3>
-                <p class="muted small">Herramientas organizadas, hielo controlado, presentación premium.</p>
+                <h3>Barra móvil</h3>
+                <p class="muted small">Organización, hielo, herramientas y presentación premium.</p>
                 <ul class="bullets">
-                  <li>Estación completa</li>
-                  <li>Hielo + storage</li>
+                  <li>Montaje</li>
+                  <li>Control de hielo</li>
                   <li>Desmontaje limpio</li>
                 </ul>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- COCKTAILS -->
-      <section id="cocktails" class="section section--panel">
-        <div class="container panel">
-          <div class="panel__left">
-            <p class="eyebrow">CÓCTELES SIGNATURE</p>
-            <h2>Fotogénicos. Fríos. Perfectos.</h2>
-            <p class="muted">
-              Todo “encerrado” en cards compactos para que en móvil se vea ordenado y premium.
-            </p>
-
-            <div class="grid cards cards--3 cocktails-grid">
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-mojito-4x5.png" alt="Mojito" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Mojito</h3>
-                  <p class="muted small">Menta · lima · burbujeante</p>
-                </div>
-              </article>
-
-              <!-- OJO: SWAP solicitado por ti (daiquiri = margarita / margarita = daiquiri) -->
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-daiquiri-4x5.png" alt="Margarita" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Margarita</h3>
-                  <p class="muted small">Borde de sal · cítrico · frío</p>
-                </div>
-              </article>
-
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-pina-colada-4x5.png" alt="Piña Colada" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Piña Colada</h3>
-                  <p class="muted small">Cremosa · tropical · suave</p>
-                </div>
-              </article>
-
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-margarita-4x5.png" alt="Daiquiri" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Daiquiri</h3>
-                  <p class="muted small">Lima · final limpio</p>
-                </div>
-              </article>
-
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-pisco-sour-4x5.png" alt="Pisco Sour" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Pisco Sour</h3>
-                  <p class="muted small">Espuma sedosa · bitters</p>
-                </div>
-              </article>
-
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-sangria-4x5.png" alt="Sangría" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Sangría</h3>
-                  <p class="muted small">Fruta · hielo · tono rubí</p>
-                </div>
-              </article>
-
-              <!-- NUEVOS (IA) - con nombres EXACTOS como en tu carpeta -->
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-b52-4x5.jpg" alt="B-52 Shot" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>B-52 Shot</h3>
-                  <p class="muted small">Capas · café · crema · naranja</p>
-                </div>
-              </article>
-
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-moscow-mule-4x5.jpg" alt="Moscow Mule" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Moscow Mule</h3>
-                  <p class="muted small">Jengibre · lima · taza de cobre</p>
-                </div>
-              </article>
-
-              <article class="card cocktail">
-                <div class="card__media card__media--cocktail">
-                  <img src="img/cocktail-screwdriver-4x5.jpg" alt="Screwdriver" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3>Screwdriver</h3>
-                  <p class="muted small">Vodka · jugo de naranja · hielo</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="panel__right">
-            <div class="panel__stack">
-              <div class="panel__brand">
-                <div
-                  class="panel__brandImg"
-                  style="background-image: url('img/brandmark-peposhots-warm-16x9.png');"
-                  role="img"
-                  aria-label="Peposhots brandmark banner"
-                ></div>
-              </div>
-
-              <div class="panel__note card">
-                <p class="eyebrow eyebrow--accent">DETALLES</p>
-                <h3>Acabado premium</h3>
-                <p class="muted small">
-                  Hielo claro, garnish limpio y presentación consistente — cada trago se ve intencional.
-                </p>
-                <div class="divider"></div>
-                <a class="btn btn--primary btn--sm" href="#contact">Reservar</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -361,9 +236,9 @@
           <div class="section__head">
             <div>
               <h2>Eventos</h2>
-              <p class="muted">Vibes distintos. Misma ejecución premium.</p>
+              <p class="muted">Cada vibe distinto. El mismo estándar premium.</p>
             </div>
-            <a class="btn btn--ghost btn--sm" href="#contact">Decirme tu fecha</a>
+            <a class="btn btn--ghost btn--sm" href="#contact">Consultar fecha</a>
           </div>
 
           <div class="events">
@@ -373,7 +248,7 @@
               </div>
               <div class="event-card__meta">
                 <h3>Bodas</h3>
-                <p class="muted small">Luz romántica · flujo perfecto</p>
+                <p class="muted small">Ritmo suave · estética elegante</p>
               </div>
             </article>
 
@@ -389,11 +264,11 @@
 
             <article class="event-card">
               <div class="event-card__media">
-                <img src="img/event-home-residence-3x2.png" alt="Casa o residencias" loading="lazy" />
+                <img src="img/event-home-residence-3x2.png" alt="En casa y residencias" loading="lazy" />
               </div>
               <div class="event-card__meta">
-                <h3>En casa / Residencias</h3>
-                <p class="muted small">Ambiente cozy · rincón bar premium</p>
+                <h3>Casa / Residencias</h3>
+                <p class="muted small">Cozy premium · bar corner</p>
               </div>
             </article>
 
@@ -403,7 +278,114 @@
               </div>
               <div class="event-card__meta">
                 <h3>Cumpleaños</h3>
-                <p class="muted small">Energía festiva · look elevado</p>
+                <p class="muted small">Festivo · luces cálidas · energía</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COCKTAILS -->
+      <section id="cocktails" class="section section--panel">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow">CÓCTELES</p>
+              <h2>Orden visual. Foto premium. Frío real.</h2>
+              <p class="muted">Todos en su recuadro con tamaño consistente (móvil incluido).</p>
+            </div>
+          </div>
+
+          <div class="grid cards cards--3 cocktails-grid">
+            <!-- IA (tus nombres del folder) -->
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-mojito-4x5.png" alt="Mojito" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Mojito</h3>
+                <p class="muted small">Menta · lima · hielo</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-margarita-4x5.png" alt="Margarita" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Margarita</h3>
+                <p class="muted small">Sal · cítrico · frío</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-daiquiri-4x5.png" alt="Daiquiri" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Daiquiri</h3>
+                <p class="muted small">Lima · limpio · clásico</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-pina-colada-4x5.png" alt="Piña Colada" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Piña Colada</h3>
+                <p class="muted small">Coco · piña · creamy</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-pisco-sour-4x5.png" alt="Pisco Sour" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Pisco Sour</h3>
+                <p class="muted small">Espuma · bitters · elegante</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-sangria-4x5.png" alt="Sangría" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Sangría</h3>
+                <p class="muted small">Fruta · hielo · ruby</p>
+              </div>
+            </article>
+
+            <!-- Nuevos (tu carpeta) -->
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-b52-4x5.jpg" alt="B-52 Shot" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>B-52 Shot</h3>
+                <p class="muted small">Capas · café · crema · naranja</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-moscow-mule-4x5.jpg" alt="Moscow Mule" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Moscow Mule</h3>
+                <p class="muted small">Jengibre · lima · taza de cobre</p>
+              </div>
+            </article>
+
+            <article class="card cocktail">
+              <div class="card__media">
+                <img src="img/cocktail-screwdriver-4x5.jpg" alt="Screwdriver" loading="lazy" />
+              </div>
+              <div class="card__body">
+                <h3>Screwdriver</h3>
+                <p class="muted small">Vodka · jugo de naranja · hielo</p>
               </div>
             </article>
           </div>
@@ -415,27 +397,27 @@
         <div class="container split">
           <div class="split__copy">
             <p class="eyebrow">SOBRE</p>
-            <h2>Experiencia que se siente.</h2>
+            <h2>Se nota en el servicio.</h2>
             <p class="muted">
-              Disciplina de estación, hospitalidad real y consistencia — hecho para eventos premium.
+              Disciplina en la estación, hospitalidad y consistencia en cada cóctel — pensado para eventos premium.
             </p>
 
             <div class="pillars">
               <div class="pillar">
-                <h3>Estación impecable</h3>
+                <h3>Estación limpia</h3>
                 <p class="muted small">Rápido sin desorden. Todo tiene su lugar.</p>
               </div>
               <div class="pillar">
-                <h3>Flujo de invitados</h3>
-                <p class="muted small">Control de fila, servicio ágil, energía calmada.</p>
+                <h3>Ritmo calmado</h3>
+                <p class="muted small">Flujo de invitados, colas, servicio suave.</p>
               </div>
               <div class="pillar">
                 <h3>Look premium</h3>
-                <p class="muted small">Cristalería, garnish, detalles: siempre intencional.</p>
+                <p class="muted small">Hielo, garnish y cristalería: intencional.</p>
               </div>
               <div class="pillar">
                 <h3>Vibe Miami</h3>
-                <p class="muted small">Tropical cálido, mood elegante.</p>
+                <p class="muted small">Cálido, tropical, elegante.</p>
               </div>
             </div>
           </div>
@@ -445,19 +427,19 @@
               class="banner"
               style="background-image: url('img/brandmark-peposhots-dark-16x9.png');"
               role="img"
-              aria-label="Peposhots banner"
+              aria-label="Banner Peposhots"
             ></div>
           </div>
         </div>
       </section>
 
-      <!-- TESTIMONIALS + FAQ -->
+      <!-- FAQ + TESTIMONIALS -->
       <section id="faq" class="section bgplate">
         <div
           class="bgplate__bg"
           style="background-image: url('img/bg-testimonials-faq-16x9.png');"
           role="img"
-          aria-label="Testimonials and FAQ background"
+          aria-label="Fondo FAQ"
         ></div>
         <div class="bgplate__overlay"></div>
 
@@ -466,15 +448,15 @@
             <div>
               <div class="section__head">
                 <div>
-                  <h2>Testimonios</h2>
-                  <p class="muted">Cortos, creíbles, tono premium.</p>
+                  <h2>Reseñas</h2>
+                  <p class="muted">Cortas, creíbles, tono premium.</p>
                 </div>
               </div>
 
               <div class="grid cards cards--3 reviews--stack">
                 <article class="card review">
                   <div class="stars" aria-label="5 estrellas">★★★★★</div>
-                  <p>“Todo se sintió premium: montaje limpio, rápido, y se veía caro.”</p>
+                  <p>“Todo se sintió premium: estación limpia, ritmo rápido y presentación cara.”</p>
                   <div class="review__meta">
                     <span class="avatar">A</span>
                     <div>
@@ -486,7 +468,7 @@
 
                 <article class="card review">
                   <div class="stars" aria-label="5 estrellas">★★★★★</div>
-                  <p>“Consistencia toda la noche. La estación estaba impecable.”</p>
+                  <p>“Cócteles consistentes toda la noche. Disciplina de estación top.”</p>
                   <div class="review__meta">
                     <span class="avatar">M</span>
                     <div>
@@ -498,7 +480,7 @@
 
                 <article class="card review">
                   <div class="stars" aria-label="5 estrellas">★★★★★</div>
-                  <p>“El ambiente quedó perfecto: cálido, tropical y elegante.”</p>
+                  <p>“La atmósfera quedó exacta: cálida, tropical y elegante.”</p>
                   <div class="review__meta">
                     <span class="avatar">S</span>
                     <div>
@@ -520,22 +502,22 @@
 
               <div class="faq">
                 <details class="faq__item">
-                  <summary>¿Con cuánta anticipación debo reservar?</summary>
-                  <div class="faq__content">Recomendado: 1–3 semanas. Fechas pico: antes.</div>
+                  <summary>¿Con cuánta anticipación reservo?</summary>
+                  <div class="faq__content">Recomendado: 1–3 semanas. En fechas pico, antes.</div>
                 </details>
 
                 <details class="faq__item">
                   <summary>¿Incluye alcohol?</summary>
-                  <div class="faq__content">Te damos la lista de compras y cantidades. Se ajusta al evento.</div>
+                  <div class="faq__content">Podemos guiar lista y cantidades. Se define según el evento.</div>
                 </details>
 
                 <details class="faq__item">
-                  <summary>¿Qué se necesita en el lugar?</summary>
-                  <div class="faq__content">Un espacio pequeño para la estación. Definimos hielo, vasos y setup.</div>
+                  <summary>¿Qué necesitas en el lugar?</summary>
+                  <div class="faq__content">Un espacio para la estación. Se coordina hielo, vasos y setup.</div>
                 </details>
 
                 <details class="faq__item">
-                  <summary>¿Puedo pedir un menú personalizado?</summary>
+                  <summary>¿Puedo pedir menú personalizado?</summary>
                   <div class="faq__content">Sí. Ajustamos sabores y presentación al tema.</div>
                 </details>
               </div>
@@ -544,13 +526,13 @@
         </div>
       </section>
 
-      <!-- CONTACT / CTA FINAL -->
+      <!-- CONTACT -->
       <section id="contact" class="section cta">
         <div
           class="cta__bg"
           style="background-image: url('img/cta-contact-16x9.png');"
           role="img"
-          aria-label="CTA background"
+          aria-label="Fondo contacto"
         ></div>
         <div class="cta__overlay"></div>
 
@@ -558,12 +540,11 @@
           <div class="cta__card card">
             <p class="eyebrow eyebrow--accent">LISTO PARA RESERVAR</p>
             <h2>Armemos tu bar.</h2>
-            <p class="muted">Envíame fecha, ubicación, cantidad de invitados y tipo de evento.</p>
+            <p class="muted">Mándame fecha, lugar, invitados y tipo de evento — respondo rápido.</p>
 
             <div class="cta__actions">
               <a class="btn btn--primary" href="#">WhatsApp</a>
-              <a class="btn btn--ghost" href="#">Llamar</a>
-              <a class="btn btn--ghost" href="#top">Subir</a>
+              <a class="btn btn--ghost" href="#top">Volver arriba</a>
             </div>
 
             <div class="divider"></div>
@@ -575,13 +556,13 @@
           <footer class="footer">
             <div class="footer__inner">
               <div class="footer__left">
-                <span class="brand__title brand__title--footer">Peposhots</span>
-                <span class="muted small">© Derechos reservados.</span>
+                <span class="brand__name brand__name--footer">Peposhots</span>
+                <span class="muted small">© Todos los derechos reservados.</span>
               </div>
               <div class="footer__links">
                 <a href="#services">Servicios</a>
-                <a href="#cocktails">Cócteles</a>
                 <a href="#events">Eventos</a>
+                <a href="#cocktails">Cócteles</a>
                 <a href="#faq">Preguntas</a>
               </div>
             </div>
